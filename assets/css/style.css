@@ -1,12 +1,40 @@
+body {
+    background-image: url("../images/sparkle-background.jpg")
+}
+
+.wrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    background: transparent;
+    text-align: center;
+    width: 90%;
+}
+
 button {
-    background-color: #4CAF50; /* Green */
+    background-color: #000;
     border: none;
-    border-radius: 12px;
+    border-radius: 10px;
     color: #fff;
     margin: 5px;
-    padding: 15px 32px;
+    padding: 10px 13px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+h1,
+label, 
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.gif-holder {
+    float: left;
+    margin: 15px;
 }
