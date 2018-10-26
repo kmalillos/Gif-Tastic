@@ -24,7 +24,7 @@ button {
     color: #fff;
     cursor: pointer;
     margin: 5px;
-    padding: 10px 13px;
+    padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -56,4 +56,5 @@ label {
 .gif-holder {
     float: left;
     margin: 15px;
+    cursor: pointer;
 }
