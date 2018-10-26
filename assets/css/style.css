@@ -1,5 +1,8 @@
 body {
-    background-image: url("../images/sparkle-background.jpg")
+    background-image: url("../images/sparkle-background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .wrapper {
@@ -19,6 +22,7 @@ button {
     border: none;
     border-radius: 10px;
     color: #fff;
+    cursor: pointer;
     margin: 5px;
     padding: 10px 13px;
     text-align: center;
@@ -27,15 +31,21 @@ button {
     font-size: 16px;
 }
 
+button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
 h1,
 label, 
+h4,
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 900;
 }
 

@@ -24,6 +24,7 @@ function displayButtons () {
         $(".gif-buttons").append(gifButton);
     }
 
+    // display gif function needs to be called here
     displayGifs();
 };
 
@@ -59,7 +60,9 @@ function displayGifs () {
             .then(function(response) {
                 
                 // $(".gif-text").html("<p>To play and pause, click on the gif images...</p>"); 
-                $(".gif-text").html("<p>To <i class='fas fa-play'></i> and <i class='fas fa-pause'></i>, click on the gif images...</p>"); 
+                $(".gif-text").html("<h4>To <i class='fas fa-play'></i> and <i class='fas fa-pause'></i>, click on the gif images...</h4>"); 
+
+                $(".gif-display").empty();
 
                 var results = response.data;
 
@@ -110,67 +113,5 @@ function displayGifs () {
 displayButtons();
 
 addButton();
-
-//     // title-button on-click ballback function
-// $(".title-button").on("click", function () {
-
-//     console.log("this is a title button");
-
-//     var title = $(this).attr("movieTitle");
-//     var apiKey = "GjPLNyBk4cBQkJtIBFXkhJha8PESc52X";
-//     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + title + "&api_key=" + apiKey + "&limit=10";
-
-//     $.ajax({
-//         url: queryURL,
-//         method: "GET"
-//     })
-//         .then(function(response) {
-            
-//             // $(".gif-text").html("<p>To play and pause, click on the gif images...</p>"); 
-//             $(".gif-text").html("<p>To <i class='fas fa-play'></i> and <i class='fas fa-pause'></i>, click on the gif images...</p>"); 
-
-//             var results = response.data;
-
-//             for (var i=0; i<results.length; i++) {
-
-//                 var gifHolder = $("<div>")
-//                     gifHolder.addClass("gif-holder")
-                
-//                 var rating = $("<p>");
-//                     rating.text("Rating: " + results[i].rating);
-//                 gifHolder.append(rating);
-
-//                 var gifImage = $("<img>");
-//                     gifImage.addClass("gif-image");
-//                     gifImage.attr("src", results[i].images.fixed_height_still.url);
-//                     gifImage.attr("still", results[i].images.fixed_height_still.url);
-//                     gifImage.attr("animate", results[i].images.fixed_height.url);
-//                     gifImage.attr("state", "still")
-//                 gifHolder.append(gifImage);
-            
-//                 $(".gif-display").prepend(gifHolder);
-//             }; // close for loop
-
-//                 // gif-image on-click callback function
-//                 // to animate still gif
-//             $(".gif-image").on("click", function () {
-
-//                 console.log("this is a gif");
-
-//                 var state = $(this).attr("state");
-
-//                 if (state === "still") {
-//                     $(this).attr("src", $(this).attr("animate"));
-//                     $(this).attr("state", "animate");
-//                 } else {
-//                     $(this).attr("src", $(this).attr("still"));
-//                     $(this).attr("state", "still");
-//                 } // close for loop
-//             }); // close gif-image on-click function 
-
-//         }) // close ajax.then
-// }); // close title-button on-click function
- 
-
 
 }); // close document.ready
