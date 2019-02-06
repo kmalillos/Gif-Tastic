@@ -1,9 +1,38 @@
 body {
-    background-image: url("../images/sparkle-background.jpg");
-    background-repeat: no-repeat;
+    /* background: no-repeat fixed center; */
     background-attachment: fixed;
+    background-image: url("../images/sparkle-background.jpg");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
 }
+
+.serif-font {
+    font-family: 'Playfair Display', serif;
+}
+
+.sans-font {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+label, 
+h4,
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+label {
+    font-size: 18px;
+}
+
 
 .wrapper {
     display: block;
@@ -36,25 +65,31 @@ button:hover {
     opacity: 0.5;
 }
 
-h1,
-label, 
-h4,
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-}
-
-h1 {
-    font-size: 40px;
-    font-weight: 900;
-}
-
-label {
-    font-size: 18px;
-}
 
 .gif-holder {
     float: left;
     margin: 15px;
     cursor: pointer;
+}
+
+.sticky-footer {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: -15px;
+    height: auto;
+    width: 100%;
+}
+
+.footer-style {
+    background-color: #fff;
+    border-top: 3px double #000;
+    height: auto;
+    opacity: 0.85;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 0;
+    text-align: center;
+    margin-top: 25px;
+    padding: 10px;
 }

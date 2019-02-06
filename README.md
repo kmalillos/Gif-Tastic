@@ -4,14 +4,14 @@ Take your chick flick references to the next level! Because even though *you* ar
 
 ### Try It Out: [Live Page Here](https://kmalillos.github.io/gif-tastic/)
 
-![Image](https://github.com/kmalillos/unit-4-game/blob/master/assets/images/read-me/readme-pic.JPG)
+![Image](https://github.com/kmalillos/gif-tastic/blob/master/assets/images/read-me/live-page.JPG)
 
 ## How It Works
 
-* Chose from premade "chick flick" themed buttons to search for gifs 
-* Or, the form allows User to add buttons of their choice
-* When button is clicked, gifs will display below
-* Gifs are displayed as still images
+* Chose from premade "chick flick" themed buttons to search for gifs
+* Or, the form allows User to add buttons of their choice.
+* When button is clicked, gifs will display below.
+* Gifs are displayed as still images.
 * Clicking on the gif image pauses and plays the gif animation.
 
 **Sample Demo:** [Link](https://youtu.be/BqreERTLjgQ)
