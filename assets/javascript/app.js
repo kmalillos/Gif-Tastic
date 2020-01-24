@@ -58,6 +58,8 @@ function displayGifs () {
             method: "GET"
         })
             .then(function(response) {
+
+                console.log(response);
                 
                 // $(".gif-text").html("<p>To play and pause, click on the gif images...</p>"); 
                 $(".gif-text").html("<h4>To <i class='fas fa-play'></i> and <i class='fas fa-pause'></i>, click on the gif images...</h4>"); 
@@ -71,9 +73,9 @@ function displayGifs () {
                     var gifHolder = $("<div>")
                         gifHolder.addClass("gif-holder")
                     
-                    var rating = $("<p>");
-                        rating.text("Rating: " + results[i].rating);
-                    gifHolder.append(rating);
+                    // var rating = $("<p>");
+                    //     rating.text("Rating: " + results[i].rating);
+                    // gifHolder.append(rating);
 
                     var gifImage = $("<img>");
                         gifImage.addClass("gif-image");
